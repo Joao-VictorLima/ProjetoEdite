@@ -3,9 +3,84 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Presentation", "0-Presentation", "{4AB597FE-C3CA-4E97-95AA-62BD9C0953A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Application", "1-Application", "{82C8F720-2A7B-49F8-95D8-CECA351CFC49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Services", "2-Services", "{D74780D8-E42E-4190-A18C-6B096321755B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Domain", "3-Domain", "{A9B6DFFE-7E74-4C7B-839E-E1F3B322AC70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infraestructure", "4-Infraestructure", "{D96B6C2D-1EFA-4B62-A061-334DED99C054}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoEdite.Server", "ProjetoEdite\ProjetoEdite.Server\ProjetoEdite.Server.csproj", "{959B464F-889A-4A6B-89DB-E13B287FD7B1}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "projetoedite.client", "ProjetoEdite\projetoedite.client\projetoedite.client.esproj", "{62F0D670-A047-49E2-8711-66839541FECD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoEditeApplication", "ProjetoEditeApplication\ProjetoEditeApplication.csproj", "{FC48B4CF-689A-4A3C-A9AB-94040F857664}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoEditeDtos", "ProjetoEditeDtos\ProjetoEditeDtos.csproj", "{8C2C400C-1D5F-4354-8751-AD12AF01A478}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoEditeService", "ProjetoEditeService\ProjetoEditeService.csproj", "{36C77402-5041-443F-A296-5A90FBA9785F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoEditeDomain", "ProjetoEditeDomain\ProjetoEditeDomain.csproj", "{CD0E7FC1-C502-4062-BF90-6ECA2C0BFE50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1-CrossCutting", "4.1-CrossCutting", "{33A126BF-D90C-4356-A498-7888AC04DA1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2-Data", "4.2-Data", "{2A34E81F-90DF-40F3-B34B-B192941FDADE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoEditeData", "ProjetoEditeData\ProjetoEditeData.csproj", "{E84B5C45-FA5D-4B27-BEDC-BCD75B41DFA3}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{959B464F-889A-4A6B-89DB-E13B287FD7B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{959B464F-889A-4A6B-89DB-E13B287FD7B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{959B464F-889A-4A6B-89DB-E13B287FD7B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{959B464F-889A-4A6B-89DB-E13B287FD7B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62F0D670-A047-49E2-8711-66839541FECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62F0D670-A047-49E2-8711-66839541FECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62F0D670-A047-49E2-8711-66839541FECD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{62F0D670-A047-49E2-8711-66839541FECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62F0D670-A047-49E2-8711-66839541FECD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62F0D670-A047-49E2-8711-66839541FECD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FC48B4CF-689A-4A3C-A9AB-94040F857664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC48B4CF-689A-4A3C-A9AB-94040F857664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC48B4CF-689A-4A3C-A9AB-94040F857664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC48B4CF-689A-4A3C-A9AB-94040F857664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C2C400C-1D5F-4354-8751-AD12AF01A478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C2C400C-1D5F-4354-8751-AD12AF01A478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C2C400C-1D5F-4354-8751-AD12AF01A478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C2C400C-1D5F-4354-8751-AD12AF01A478}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36C77402-5041-443F-A296-5A90FBA9785F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36C77402-5041-443F-A296-5A90FBA9785F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36C77402-5041-443F-A296-5A90FBA9785F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36C77402-5041-443F-A296-5A90FBA9785F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD0E7FC1-C502-4062-BF90-6ECA2C0BFE50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD0E7FC1-C502-4062-BF90-6ECA2C0BFE50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD0E7FC1-C502-4062-BF90-6ECA2C0BFE50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD0E7FC1-C502-4062-BF90-6ECA2C0BFE50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E84B5C45-FA5D-4B27-BEDC-BCD75B41DFA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E84B5C45-FA5D-4B27-BEDC-BCD75B41DFA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E84B5C45-FA5D-4B27-BEDC-BCD75B41DFA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E84B5C45-FA5D-4B27-BEDC-BCD75B41DFA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{959B464F-889A-4A6B-89DB-E13B287FD7B1} = {4AB597FE-C3CA-4E97-95AA-62BD9C0953A5}
+		{62F0D670-A047-49E2-8711-66839541FECD} = {4AB597FE-C3CA-4E97-95AA-62BD9C0953A5}
+		{FC48B4CF-689A-4A3C-A9AB-94040F857664} = {82C8F720-2A7B-49F8-95D8-CECA351CFC49}
+		{8C2C400C-1D5F-4354-8751-AD12AF01A478} = {82C8F720-2A7B-49F8-95D8-CECA351CFC49}
+		{36C77402-5041-443F-A296-5A90FBA9785F} = {D74780D8-E42E-4190-A18C-6B096321755B}
+		{CD0E7FC1-C502-4062-BF90-6ECA2C0BFE50} = {A9B6DFFE-7E74-4C7B-839E-E1F3B322AC70}
+		{33A126BF-D90C-4356-A498-7888AC04DA1B} = {D96B6C2D-1EFA-4B62-A061-334DED99C054}
+		{2A34E81F-90DF-40F3-B34B-B192941FDADE} = {D96B6C2D-1EFA-4B62-A061-334DED99C054}
+		{E84B5C45-FA5D-4B27-BEDC-BCD75B41DFA3} = {2A34E81F-90DF-40F3-B34B-B192941FDADE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9A21569-1608-489D-BDF7-0C2A21765057}
