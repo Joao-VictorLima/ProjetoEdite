@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ProjetoEditeDomain.Entities.Core;
+using ProjetoEditeDomain.Entities.User;
 using System.Reflection;
 
 namespace ProjetoEditeData.Context
@@ -10,6 +12,8 @@ namespace ProjetoEditeData.Context
         {
         }
 
+        public DbSet<Person> People { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
