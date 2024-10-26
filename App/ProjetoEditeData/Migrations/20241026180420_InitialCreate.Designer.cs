@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjetoEditeData.Context;
 
@@ -11,9 +12,11 @@ using ProjetoEditeData.Context;
 namespace ProjetoEditeData.Migrations
 {
     [DbContext(typeof(ProjectEditeDbContext))]
-    partial class ProjectEditeDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241026180420_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

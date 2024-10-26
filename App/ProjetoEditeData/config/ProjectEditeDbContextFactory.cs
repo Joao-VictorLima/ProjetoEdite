@@ -7,7 +7,7 @@ namespace ProjetoEditeData.Context
 {
     public class ProjectEditeDbContextFactory : IDesignTimeDbContextFactory<ProjectEditeDbContext>
     {
-        public ProjectEditeDbContext CreateDbContext(string[] args = null)
+        public ProjectEditeDbContext CreateDbContext(string[] args)
         {
             // Define a configuração de ambiente
             var configuration = new ConfigurationBuilder()
