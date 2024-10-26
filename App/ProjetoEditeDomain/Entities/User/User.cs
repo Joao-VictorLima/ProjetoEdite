@@ -1,7 +1,7 @@
 ﻿using ProjetoEditeDomain.Entities.Core;
 using ProjetoEditeDomain.Types;
 
-namespace ProjetoEditeDomain.Entities.User
+namespace ProjetoEditeDomain.Entities
 {
     public class User
     {
