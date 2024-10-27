@@ -1,15 +1,21 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Feed from './components/Feed';
+import { useState, React } from 'react';
+import { Layout } from 'antd';
+import { Outlet } from 'react-router-dom';
+
+import './App.css';
+
+function App() {
 
 const App: React.FC = () => {
     return (
-        <Router>
-            <Navbar />
-            <Route path="/feed" element={<Feed />} />
-        </Router>
-    );
+        <Layout style={{ minHeight: '100vh', minWidth: '100vw'}}>
+          <Layout>
+            <Layout.Content style={{ padding: '20px' }}>
+              <Outlet />
+            </Layout.Content>
+          </Layout>
+        </Layout>
+      );
 };
 
 export default App;
