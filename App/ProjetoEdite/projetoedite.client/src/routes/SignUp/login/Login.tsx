@@ -8,21 +8,6 @@ const { Title } = Typography;
 
 const Login: React.FC = () => {
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const showModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleOk = () => {
-    setIsModalOpen(false);
-  };
-
-  const handleCancel = () => {
-    setIsModalOpen(false);
-  };
-
-
   const [loading, setLoading] = useState(false);
 
   const onFinish = (values: any) => {
@@ -40,15 +25,6 @@ const Login: React.FC = () => {
 
   return (
     <div style={{ width: 300, margin: "0 auto", padding: "100px 0" }}>
-
-  <Button type="primary" onClick={showModal}>
-          Open Modal
-        </Button>
-        <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-        </Modal>
 
       <Title level={3} style={{ textAlign: "center" }}>
     sahjdgtsahkjdgh sakjd
