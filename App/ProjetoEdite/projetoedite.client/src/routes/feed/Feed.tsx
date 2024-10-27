@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { List, Avatar, Button, Card, Input } from 'antd';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import api from '../services/api';
+import api from '../../services/api';
 
 const { TextArea } = Input;
 
