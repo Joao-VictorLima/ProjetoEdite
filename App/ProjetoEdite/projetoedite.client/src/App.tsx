@@ -1,10 +1,8 @@
-import { useState, React } from 'react';
+import React, { useState } from 'react';
 import { Layout } from 'antd';
 import { Outlet } from 'react-router-dom';
 
 import './App.css';
-
-function App() {
 
 const App: React.FC = () => {
     return (

@@ -7,7 +7,8 @@ import App from './App.tsx'
 import './index.css'
 
 //Routes
-import Login from './routes/SignUp/login/Login.tsx';
+import Login from './routes/signup/login/Login.tsx';
+import Feed from './routes/feed/Feed.tsx';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Login/>
+      },
+      {
+        path: "/Feed",
+        element: <Feed/>
       }
     ]
   }
