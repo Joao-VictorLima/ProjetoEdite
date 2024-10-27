@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using ProjetoEditeDomain.Entities.User;
+using ProjetoEditeDomain.Entities;
 
-namespace ProjetoEditeData.Map.Users
+namespace ProjetoEditeData.Map
 {
     public class UserMap : IEntityTypeConfiguration<User>
     {

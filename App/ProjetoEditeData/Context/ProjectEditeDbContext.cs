@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProjetoEditeDomain.Entities.Core;
-using ProjetoEditeDomain.Entities.User;
 using System.Reflection;
+using ProjetoEditeDomain.Entities;
 
 namespace ProjetoEditeData.Context
 {
@@ -14,6 +14,11 @@ namespace ProjetoEditeData.Context
 
         public DbSet<Person> People { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Post> Posts { get; set; }
+        public DbSet<Like> Likes { get; set; }
+        public DbSet<Save> Saves { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<Image> Images { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

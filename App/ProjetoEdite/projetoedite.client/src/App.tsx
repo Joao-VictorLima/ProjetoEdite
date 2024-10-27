@@ -1,12 +1,12 @@
-import { useState } from 'react';
+import { useState, React } from 'react';
 import { Layout } from 'antd';
 import { Outlet } from 'react-router-dom';
-
 
 import './App.css';
 
 function App() {
 
+const App: React.FC = () => {
     return (
         <Layout style={{ minHeight: '100vh', minWidth: '100vw'}}>
           <Layout>
