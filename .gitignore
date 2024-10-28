@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Arquivo com a connectstring
+App/ProjetoEdite/ProjetoEdite.Server/appsettings.json
