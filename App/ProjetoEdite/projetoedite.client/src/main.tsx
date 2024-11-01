@@ -7,9 +7,10 @@ import App from './App.tsx'
 import './index.css'
 
 //Routes
-import Login from './routes/signup/login/Login.tsx';
+import Login from './routes/SignUp/login/Login.tsx';
 import Feed from './routes/feed/Feed.tsx';
 import UserProfile from './routes/userProfile/UserProfile.tsx';
+import SignUp from './routes/SignUp/signUp/SignUp.tsx'; 
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/UserProfile",
         element: <UserProfile/>
+      },
+      {
+        path: "/SignUp",
+        element: <SignUp/>
       },
     ]
   }
