@@ -9,6 +9,7 @@ import './index.css'
 //Routes
 import Login from './routes/signup/login/Login.tsx';
 import Feed from './routes/feed/Feed.tsx';
+import UserProfile from './routes/userProfile/UserProfile.tsx';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,11 @@ const router = createBrowserRouter([
       {
         path: "/Feed",
         element: <Feed/>
-      }
+      },
+      {
+        path: "/UserProfile",
+        element: <UserProfile/>
+      },
     ]
   }
 ])
