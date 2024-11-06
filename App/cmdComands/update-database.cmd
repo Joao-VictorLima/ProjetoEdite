@@ -1,0 +1,1 @@
+dotnet ef database update --startup-project "../ProjetoEdite/ProjetoEdite.Server" --project "../ProjetoEditeData/ProjetoEditeData.csproj"
