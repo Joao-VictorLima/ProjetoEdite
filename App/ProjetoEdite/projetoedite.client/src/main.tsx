@@ -7,10 +7,10 @@ import App from './App.tsx'
 import './index.css'
 
 //Routes
-import Login from './routes/SignUp/login/Login.tsx';
+import Login from './routes/sign/login/Login.tsx';
 import Feed from './routes/feed/Feed.tsx';
 import UserProfile from './routes/userProfile/UserProfile.tsx';
-import SignUp from './routes/SignUp/signUp/SignUp.tsx'; 
+import SignUp from './routes/sign/signUp/SignUp.tsx'
 
 const router = createBrowserRouter([
   {
