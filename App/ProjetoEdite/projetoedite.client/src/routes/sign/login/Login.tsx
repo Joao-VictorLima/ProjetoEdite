@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Form, Input, Button, Typography, message } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
-import { Modal } from "antd";
 
 const { Title } = Typography;
 
@@ -10,7 +9,7 @@ const Login: React.FC = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const onFinish = (values: any) => {
+  const onFinish = () => {
     setLoading(true);
     // Simulação de login
     setTimeout(() => {
@@ -19,40 +18,35 @@ const Login: React.FC = () => {
     }, 2000);
   };
 
-  const onFinishFailed = (errorInfo: any) => {
-    message.error("Failed to log in. Please check your details.");
-  };
-
   return (
     <div style={{ width: 300, margin: "0 auto", padding: "100px 0" }}>
 
       <Title level={3} style={{ textAlign: "center" }}>
-    sahjdgtsahkjdgh sakjd
+      Realizar Login
       </Title>
       <Form
         name="login_form"
         initialValues={{ remember: true }}
         onFinish={onFinish}
-        onFinishFailed={onFinishFailed}
       >
         <Form.Item
-          name="username"
-          rules={[{ required: true, message: "Please input your Username!" }]}
+          name="email"
+          rules={[{ required: true, message: "Por favor insira seu Email" }]}
         >
           <Input
             prefix={<UserOutlined />}
-            placeholder="Username"
+            placeholder="Email"
             size="large"
           />
         </Form.Item>
 
         <Form.Item
           name="password"
-          rules={[{ required: true, message: "Please input your Password!" }]}
+          rules={[{ required: true, message: "Por favor insira sua Senha!" }]}
         >
           <Input.Password
             prefix={<LockOutlined />}
-            placeholder="Password"
+            placeholder="Senha"
             size="large"
           />
         </Form.Item>
